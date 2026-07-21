@@ -152,9 +152,7 @@ class Login extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset("assets/image/meta.png"),
-                Text(
-                  "Meta",
-                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                Text("Meta",style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                 ),
               ],
             ),
