@@ -84,26 +84,7 @@ class home extends State<home_page>{
                       Text("ritu_123",style: TextStyle(color: Colors.grey),)
                     ],
                   ),
-      
-                  Column(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(top: 10,right:2 ),
-                        height: 80,
-                        width: 80,
-                        decoration:BoxDecoration(
-                          color:Colors.blueGrey,
-                          border: Border.all(color: Colors.pink,width: 4),
-                          borderRadius: BorderRadius.circular(40),
-                          image: DecorationImage(image: 
-                          NetworkImage("https://media.istockphoto.com/id/614611822/photo/taking-the-time-to-breathe-it-all-in.jpg?s=612x612&w=is&k=20&c=BFQyCCmDOVNtWmpUWTDUD65ye1IRPiiKC0wrsNhsnms="),
-                          fit: BoxFit.cover)
-                        ),
-                      ),
-                      Text("lakshita_",style: TextStyle(color: Colors.grey),)
-                    ],
-                  ),
-      
+  
                   Column(
                     children: [
                       Container(
@@ -299,10 +280,62 @@ class home extends State<home_page>{
                   child: Text("Nature_lover",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),)
               ),
 
-             /* ElevatedButton(onPressed: (){
-                Navigator.pop(context, MaterialPageRoute(builder: (context)=> LoginPage()));
+              Column(
+            children: [
+              Row(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: 10),
+                    height: 50,
+                    width: 50,
+                    decoration: BoxDecoration(
+                        color: Colors.blueGrey,
+                        borderRadius: BorderRadius.circular(25),
+                        border: Border.all(
+                          color: Colors.pink,
+                          width: 3,
+                        ),
+                      image: DecorationImage(image: 
+                      NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-OsjVlpVqsqab8t_4vphaKifxMGJJsNYJNg&s"))
+                    ),
+                  ),
+                  Text("  Nature_lover",style:TextStyle(fontWeight: FontWeight.bold,fontSize: 16),),
+                  Spacer(),
+                  Icon(Icons.more_vert_outlined),
+                ],
+              ),
+      
+              Container(
+                margin: EdgeInsets.only(top: 10,bottom: 10),
+                height: 400,
+                width: 425,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image:NetworkImage("https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-fall-nature-scenery-free-image.jpeg?w=2210&quality=70"),
+                      fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+      
+              Row(
+                children: [
+                  SizedBox(width: 10,),
+                  Icon(Icons.favorite,color: Colors.red,size: 30,),
+                  SizedBox(width: 15,),
+                  Icon(Icons.mode_comment_outlined),
+                  SizedBox(width: 15,),
+                  Icon(Icons.cached_outlined),
+                  SizedBox(width: 15,),
+                  Icon(Icons.send),
+                ],
+              ),
+      
+              Align(
+                  alignment: Alignment.bottomLeft,
+                  child: Text("Nature_lover",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 16),)
+              ),
 
-              }, child: Icon(Icons.arrow_back))*/
+
             ],
           ),
         ],
