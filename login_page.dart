@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp1/home_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
+import 'facebookLogin.dart';
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
   @override
@@ -112,7 +112,12 @@ class Login extends State<LoginPage> {
             ),
 
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Facebooklogin()),
+                );
+              },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
