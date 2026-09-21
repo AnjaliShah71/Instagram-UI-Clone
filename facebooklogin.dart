@@ -15,6 +15,20 @@ class _Facebooklogin extends State<Facebooklogin>{
         children: [
           Icon(Icons.facebook_outlined, color: Colors.blueAccent,size: 44,),
 
+        Container(
+            margin: EdgeInsets.only(top: 50, bottom: 30),
+            height:50,
+            width:70,
+            child: TextField(
+            controller: fuser,
+             decoration: InputDecoration(
+              hintText: "Enter your Username",
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+              )
+            ),
+          ),
+          ),
         ],
       ),
     ),
