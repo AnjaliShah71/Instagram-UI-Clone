@@ -29,6 +29,21 @@ class _Facebooklogin extends State<Facebooklogin>{
             ),
           ),
           ),
+
+       Container(
+            margin: EdgeInsets.only(top: 50, bottom: 30),
+            height:50,
+            width:70,
+          child: TextField(
+            controller: fpassword,
+            decoration: InputDecoration(
+              hintText: "Enter your password",
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20),
+              )
+            ),
+          ),
+          ),
         ],
       ),
     ),
