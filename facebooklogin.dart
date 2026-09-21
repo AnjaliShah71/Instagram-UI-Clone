@@ -16,9 +16,9 @@ class _Facebooklogin extends State<Facebooklogin>{
           Icon(Icons.facebook_outlined, color: Colors.blueAccent,size: 44,),
 
         Container(
-            margin: EdgeInsets.only(top: 50, bottom: 30),
+            margin: EdgeInsets.only(top: 50, bottom: 10),
             height:50,
-            width:70,
+            width:500,
             child: TextField(
             controller: fuser,
              decoration: InputDecoration(
@@ -31,9 +31,9 @@ class _Facebooklogin extends State<Facebooklogin>{
           ),
 
        Container(
-            margin: EdgeInsets.only(top: 50, bottom: 30),
+            margin: EdgeInsets.only(top: 20, bottom: 30),
             height:50,
-            width:70,
+            width:500,
           child: TextField(
             controller: fpassword,
             decoration: InputDecoration(
