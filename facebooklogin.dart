@@ -44,7 +44,17 @@ class _Facebooklogin extends State<Facebooklogin>{
             ),
           ),
           ),
-        ],
+
+          Container(
+            margin: EdgeInsets.only(top: 20, buttom: 10),
+            height: 50,
+            width: 500,
+            child: ElevatedButtom(
+              onPressed: (){},
+              child: Text("Forget password"),
+              ),
+            )
+            ],
       ),
     ),
   );
