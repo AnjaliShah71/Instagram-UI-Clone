@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class Facebooklogin extends StatefulWidget{
-  TextEditingController fuser = TextEditingController();
-  TextEditingController fpassword = TextEditingController();
+
   @override
   State<StatefulWidget> createState() =>_Facebooklogin();
 }
 
 class _Facebooklogin extends State<Facebooklogin>{
+  TextEditingController fuser = TextEditingController();
+  TextEditingController fpassword = TextEditingController();
+  
   @override
   Widget build(BuildContext context) => Scaffold(
   body: Center(
@@ -45,7 +47,7 @@ class _Facebooklogin extends State<Facebooklogin>{
           ),
           ),
 
-          Comtainer(
+          Container(
             margin: EdgeInsets.only(top: 20, bottom: 10),
             height: 50,
             width: 500,
@@ -63,10 +65,10 @@ class _Facebooklogin extends State<Facebooklogin>{
           ),
           
           Container(
-            margin: EdgeInsets.only(top: 20, buttom: 10),
+            margin: EdgeInsets.only(top: 20, bottom: 10),
             height: 50,
             width: 500,
-            child: ElevatedButtom(
+            child: ElevatedButton(
               onPressed: (){},
               child: Text("Forget password"),
               ),
