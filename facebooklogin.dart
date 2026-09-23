@@ -45,6 +45,23 @@ class _Facebooklogin extends State<Facebooklogin>{
           ),
           ),
 
+          Comtainer(
+            margin: EdgeInsets.only(top: 20, bottom: 10),
+            height: 50,
+            width: 500,
+            child: ElevatedButton(
+              style:ElevatedButton.styleFrom(
+              backgroundColor: Colors.blue,
+            ),
+
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => home_page()));
+            },
+
+            child: Text("Log in"),
+            ),
+          ),
+          
           Container(
             margin: EdgeInsets.only(top: 20, buttom: 10),
             height: 50,
